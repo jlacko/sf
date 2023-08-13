@@ -83,6 +83,7 @@ aggregate.sf = function(x, by, FUN, ..., do_union = TRUE, simplify = TRUE,
 			paste0("Group.", seq_along(by))
 		agr[n] = "identity"
 		st_agr(x) = agr
+		x$Group.1 = NULL
 
 		x
 	}
